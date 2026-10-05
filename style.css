@@ -175,10 +175,32 @@ p{margin-bottom:1rem;color:var(--muted)}
 .contact{background:var(--green-900);color:#e9e2d4}
 .contact h2{color:#fff}
 .contact p{color:#cfd6d0}
+/* Cartões de contato */
+.c-cards{display:grid;gap:1rem;margin-top:1.8rem}
+.c-card{display:flex;gap:1rem;align-items:flex-start;padding:1.3rem 1.3rem 1.4rem;border-radius:var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:.25s}
+.c-card:hover{border-color:rgba(201,162,122,.55);background:rgba(255,255,255,.07)}
+.c-ico{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(201,162,122,.16);color:var(--gold)}
+.c-ico.sm{width:38px;height:38px;border-radius:12px}
+.c-body{min-width:0}
+.c-body h3{color:#fff;font-size:1.3rem;margin:0}
+.c-sub{margin:.15rem 0 .7rem;font-size:.9rem;color:#b9c4bd}
+.c-num{margin:0;font-family:var(--serif);font-size:1.55rem;color:#fff;line-height:1.2}
+.c-hours{margin:.35rem 0 1rem;font-size:.88rem;line-height:1.5;color:#cfd6d0}
+.c-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+.c-actions .btn{padding:.6rem 1.3rem;font-size:.9rem}
+.c-links{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.c-link{display:flex;align-items:center;gap:.8rem;padding:.9rem 1rem;border-radius:var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:.25s;min-width:0}
+.c-link:hover{border-color:rgba(201,162,122,.55);background:rgba(255,255,255,.07)}
+.c-link b{display:block;color:#fff;font-size:.92rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.c-link small{display:block;font-size:.76rem;color:#b9c4bd}
+.c-link>span:last-child{min-width:0}
+@media (max-width:560px){.c-links{grid-template-columns:1fr}.c-num{font-size:1.4rem}}
 .contact-list{margin:1.8rem 0 0}
 .contact-list li{margin-bottom:1.1rem}
 .contact-list b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold)}
 .contact-list a{font-size:1.1rem}
+.contact-list a.call{font-size:.78rem;font-weight:600;margin-left:.6rem;padding:.2rem .75rem;border:1px solid var(--gold);border-radius:999px;color:var(--gold);vertical-align:middle}
+.contact-list a.call:hover{background:var(--gold);color:var(--green-900);text-decoration:none}
 .contact-list small{display:block;font-size:.8rem;color:#b9c4bd;margin-top:.1rem}
 .contact-list a:hover{text-decoration:underline}
 .form{background:var(--white);color:var(--text);padding:2.2rem;border-radius:var(--radius);display:grid;gap:1rem;box-shadow:0 24px 60px rgba(0,0,0,.35)}
